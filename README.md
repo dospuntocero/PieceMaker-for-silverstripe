@@ -14,9 +14,8 @@ PieceMaker for SilverstripeCMS is a 3d flash slideshow module that uses XML and 
 
 ## How to use it
 
-
-* ShowInHeaderMenu => Boolean
-* ShowInFooterMenu => Boolean
-* PromoteHome => Boolean
-* ShowChildren => Boolean
-* CategoryHowMany => Varchar
+* Add the module to your silverstripe installation
+* run dev/build
+* open your admin's SiteConfig and go to Showcase tab
+* add some PMSlides
+* you are done!
