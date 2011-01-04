@@ -29,9 +29,8 @@
 	<Transitions>
 		
 		<% control PMTransitions %>
-			<% control PMTransition %>
-				<Transition Pieces="$Pieces" Time="$Time" Transition="Transition" Delay="$Delay" DepthOffset="$DepthOffset" CubeDistance="$CubeDistance"></Transition>							
-			<% end_control %>
+			$Pieces
+			<Transition Pieces="$Pieces" Time="$Time" Transition="Transition" Delay="$Delay" DepthOffset="$DepthOffset" CubeDistance="$CubeDistance"></Transition>							
 		<% end_control %>
 
 	    <Transition Pieces="9" Time="1.2" Transition="easeInOutBack" Delay="0.1" DepthOffset="300" CubeDistance="30"></Transition>

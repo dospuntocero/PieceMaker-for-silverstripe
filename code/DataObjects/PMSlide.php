@@ -10,6 +10,8 @@ class PMSlide extends DataObject {
 
 	static $has_one = array(
 		'SiteConfig' => 'SiteConfig',
-		'PMSlideFile' => 'File'
+		'PMSlideFile' => 'PMSlideFile'
 	);
+	
+	
 }

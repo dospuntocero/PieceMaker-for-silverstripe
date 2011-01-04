@@ -2,8 +2,7 @@
 class PieceMaker extends DataObjectDecorator {
 
 	function extraStatics() {
-		
-		
+
 		return array(
 			'db' =>  array(
 				'ImageWidth' => 'Varchar',
