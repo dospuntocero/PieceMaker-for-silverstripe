@@ -111,7 +111,6 @@ class PieceMaker extends DataObjectDecorator {
 				),
 				'getCMSFields_forPopup'
 		);
-		$Banners->setAllowedFileTypes(array('swf','flv','png','jpg'));
 		
 		$PMTransition = new DataObjectManager(
 			$this->owner,

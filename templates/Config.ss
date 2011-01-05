@@ -3,28 +3,28 @@
 <Piecemaker>
   <Contents>
 		<% control PMSlides %>
-		<% control PMSlideFile %>
-			<% if Extension == flv %>
-			    <Video Source="/$FileName" Title="$PMTitle" Width="940" Height="400" Autoplay="true">
-			      <Image Source="PieceMaker/contents/flash-preview.png" />
-			    </Video>				
-			<% end_if %>
-			<% if Extension == jpg %>
-   				<Image Source="<% control CroppedImage(940,400) %>$URL<% end_control %>" Title="$PMTitle"></Image>				
-			<% end_if %>				
-			<% if Extension == png %>				
-   				<Image Source="<% control CroppedImage(940,400) %>$URL<% end_control %>" Title="$PMTitle"></Image>				
-			<% end_if %>				
-			<% if Extension == swf %>				
-			    <Flash Source="/$FileName" Title="$Parent.PMTitle">
-			      <Image Source="PieceMaker/contents/flash-preview.png" />
-			    </Flash>
-			<% end_if %>
-		<% end_control %>		
+				<% control PMSlideFile %>
+					<% if Extension == flv %>
+					    <Video Source="/$FileName" Title="$PMTitle" Width="940" Height="400" Autoplay="true">
+					      <Image Source="PieceMaker/contents/flash-preview.png" />
+					    </Video>				
+					<% end_if %>
+					<% if Extension == jpg %>
+		   				<Image Source="<% control CroppedImage(940,400) %>$URL<% end_control %>" Title="$PMTitle"></Image>				
+					<% end_if %>				
+					<% if Extension == png %>				
+		   				<Image Source="<% control CroppedImage(940,400) %>$URL<% end_control %>" Title="$PMTitle"></Image>				
+					<% end_if %>				
+					<% if Extension == swf %>				
+					    <Flash Source="/$FileName" Title="$Parent.PMTitle">
+					      <Image Source="PieceMaker/contents/flash-preview.png" />
+					    </Flash>
+					<% end_if %>
+				<% end_control %>
 		<% end_control %>
- 		</Contents>
+	</Contents>
 
-		<Settings ImageWidth="$ImageWidth" ImageHeight="$ImageHeight" LoaderColor="$LoaderColor" InnerSideColor="$InnerSideColor" SideShadowAlpha="$SideShadowAlpha" DropShadowAlpha="$DropShadowAlpha" DropShadowDistance="$DropShadowDistance" DropShadowScale="$DropShadowScale" DropShadowBlurX="$DropShadowBlurX" DropShadowBlurY="$DropShadowBlurY" MenuDistanceX="$MenuDistanceX" MenuDistanceY="$MenuDistanceY" MenuColor1="$MenuColor1" MenuColor2="$MenuColor2" MenuColor3="$MenuColor3" ControlSize="$ControlSize" ControlDistance="$ControlDistance" ControlColor1="$ControlColor1" ControlColor2="$ControlColor2" ControlAlpha="$ControlAlpha" ControlAlphaOver="$ControlAlphaOver" ControlsX="$ControlsX" ControlsY="$ControlsY" ControlsAlign="$ControlsAlign" TooltipHeight="$TooltipHeight" TooltipColor="$TooltipColor" TooltipTextY="$TooltipTextY" TooltipTextStyle="$TooltipTextStyle" TooltipTextColor="$TooltipTextColor" TooltipMarginLeft="$TooltipMarginLeft" TooltipMarginRight="$TooltipMarginRight" TooltipTextSharpness="$TooltipTextSharpness" TooltipTextThickness="$TooltipTextThickness" InfoWidth="$InfoWidth" InfoBackground="$InfoBackground" InfoBackgroundAlpha="$InfoBackgroundAlpha" InfoMargin="$InfoMargin" InfoSharpness="$InfoSharpness" InfoThickness="$InfoThickness" Autoplay="$Autoplay" FieldOfView="$FieldOfView"></Settings>
+	<Settings ImageWidth="$ImageWidth" ImageHeight="$ImageHeight" LoaderColor="$LoaderColor" InnerSideColor="$InnerSideColor" SideShadowAlpha="$SideShadowAlpha" DropShadowAlpha="$DropShadowAlpha" DropShadowDistance="$DropShadowDistance" DropShadowScale="$DropShadowScale" DropShadowBlurX="$DropShadowBlurX" DropShadowBlurY="$DropShadowBlurY" MenuDistanceX="$MenuDistanceX" MenuDistanceY="$MenuDistanceY" MenuColor1="$MenuColor1" MenuColor2="$MenuColor2" MenuColor3="$MenuColor3" ControlSize="$ControlSize" ControlDistance="$ControlDistance" ControlColor1="$ControlColor1" ControlColor2="$ControlColor2" ControlAlpha="$ControlAlpha" ControlAlphaOver="$ControlAlphaOver" ControlsX="$ControlsX" ControlsY="$ControlsY" ControlsAlign="$ControlsAlign" TooltipHeight="$TooltipHeight" TooltipColor="$TooltipColor" TooltipTextY="$TooltipTextY" TooltipTextStyle="$TooltipTextStyle" TooltipTextColor="$TooltipTextColor" TooltipMarginLeft="$TooltipMarginLeft" TooltipMarginRight="$TooltipMarginRight" TooltipTextSharpness="$TooltipTextSharpness" TooltipTextThickness="$TooltipTextThickness" InfoWidth="$InfoWidth" InfoBackground="$InfoBackground" InfoBackgroundAlpha="$InfoBackgroundAlpha" InfoMargin="$InfoMargin" InfoSharpness="$InfoSharpness" InfoThickness="$InfoThickness" Autoplay="$Autoplay" FieldOfView="$FieldOfView"></Settings>
 		
 	<Transitions>
 		

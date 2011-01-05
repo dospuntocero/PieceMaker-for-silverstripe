@@ -10,8 +10,12 @@ class PMSlide extends DataObject {
 
 	static $has_one = array(
 		'SiteConfig' => 'SiteConfig',
-		'PMSlideFile' => 'PMSlideFile'
+		'PMSlideFile' => 'File'
 	);
 	
+	function onBeforeWrite(){
+		parent::onBeforeWrite();
+		$this->PMSlideFile->setName($this->PMTitle);		
+	}
 	
 }
