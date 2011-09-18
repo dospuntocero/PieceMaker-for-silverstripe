@@ -1,9 +1,6 @@
 <?php
 
-DataObject::add_extension('SiteConfig', 'PieceMaker');
-DataObject::add_extension('Image_Cached','PieceMaker_ImageDecorator');
-
-Object::add_extension('HomePage_Controller', 'PieceMaker_ControllerExtension');	
-Object::add_extension('HomePage','PieceMakerDecorator');
-
-SortableDataObject::add_sortable_class('PMSlide');
+	Object::add_extension('SiteConfig','PMDecorator');
+	Object::add_extension('Page','PMDecorator_Controller');
+	Object::add_extension('ContentController', 'PMDecorator_Extension');
+	DataObject::add_extension('Image_Cached','PM_ImageDecorator');
