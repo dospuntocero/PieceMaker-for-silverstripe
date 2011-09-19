@@ -15,10 +15,11 @@ PieceMaker for SilverstripeCMS is a 3d flash slideshow module that uses XML and 
 ## Dependencies
 
 * [DataObjectManager](http://www.leftandmain.com/silverstripe-modules/2010/08/23/dataobjectmanager/)
-* [Uploadify](http://www.leftandmain.com/silverstripe-modules/2010/08/26/uploadify/)
+* [KickAssets](http://www.leftandmain.com/silverstripe-modules/2011/08/25/kickassets/)
 
 ## How to use it
 
+* Rename the folder to PieceMaker
 * Add the dependencies if you haven't already in your project.
 * Add the module to your silverstripe installation.
 * run dev/build.
@@ -26,3 +27,5 @@ PieceMaker for SilverstripeCMS is a 3d flash slideshow module that uses XML and 
 * add some PMSlides.
 * add <% include PieceMaker %> to the template you want to show the slideshow.
 * you are done!
+
+All the config stuff is inside Config.ss file, so endusers will not be able to screw things.
